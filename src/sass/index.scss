@@ -1,0 +1,75 @@
+@import "compass/reset";
+$page_width:1200px;
+$page_container:100%;
+$page_size:12px;
+$div_margin:10px;
+$colors:(a:#008842, b:#e0e0e0,c:red,d:blue,e:orange);
+%public{
+    width: $page_width;
+    margin: 0 auto
+};
+%public1{
+    font-size: 12px;
+    font-family: Arial,Verdana,"\5b8b\4f53";
+    float: left;
+    line-height: 30px;
+    margin-right: 10px;
+}
+
+
+#top{
+    @extend %public;
+    height: 30px;
+  
+}
+
+#header{
+    width:100%;
+    height:100px;
+    background:map-get($colors, b);
+}
+#ad{
+    width: 100%;
+    height:300px;
+    background:map-get($colors, a);
+}
+#content{
+    @extend %public;
+    background:map-get($colors, e);
+   
+}
+#footer{
+    width:100%;
+    height:100px;
+    background:map-get($colors, b);
+}   
+#bottom{
+    @extend %public;
+    height:300px;
+    background:map-get($colors, c);
+}
+#top .topul{
+     float: left;
+     li{
+        @extend %public1;
+     }
+     .shanghai{
+        margin-right: 5px;
+        color:map-get($colors, a);
+        float: left;
+     }
+     .sanjiao1{
+        background: url(../images/top.png) no-repeat 0 0; 
+        display: inline-block;
+        width: 8px;
+        height: 4px;
+    }
+}
+
+#top .topul2{
+    float: right;
+    li{
+        @extend %public1; 
+    }
+}
+
