@@ -1,0 +1,107 @@
+
+#top{
+    @extend %public;
+    height: 30px;
+}
+#top .topul{
+     float: left;
+     li{
+        @extend %public1;
+        margin-right: 10px;
+        position: relative;
+     };
+     .shanghai{
+        margin-right: 5px;
+        color:map-get($colors, a);
+        float: left;
+     };
+     .city{
+        display: none;
+        position: absolute;
+        top: 28px;
+        left: 0;
+        width: 482px;
+        height: 482px;
+        border: 2px solid #007f4d;
+        background: #fff;
+     }
+     .sanjiao1{
+        background: url(../images/top.png) no-repeat 0 0; 
+        display: inline-block;
+        width: 8px;
+        height: 4px;
+    }
+};
+
+#top .topul2{
+    float: right;
+    li{
+        @extend %public1; 
+        padding: 0 10px;
+        position: relative;
+    };
+    .rentou1{
+        background: url(../images/top.png) no-repeat -40px 0; 
+        @extend %public2
+    };
+    .sanjiao2{
+        background: url(../images/top.png) no-repeat 0 0; 
+        display: inline-block;
+        width: 8px;
+        height: 6px;
+        vertical-align: middle;
+    };
+    .pic2{
+        @extend %public2;
+        background: url(../images/top.png) no-repeat -63px 0;
+    }
+    .sanjiao3{
+        background: url(../images/top.png) no-repeat 0 0; 
+        display: inline-block;
+        width: 8px;
+        height: 6px;
+        vertical-align: middle;
+    }
+    .pic3{
+        @extend %public2;
+        width:22px ;
+        background: url(../images/top.png) no-repeat -147px 0;
+    }
+    .pic4{
+        @extend %public2;
+        width:22px ;
+        background: url(../images/top.png) no-repeat -81px 0;
+    }
+    .pic5{
+        img{
+            @extend %public2;
+            height:17px; 
+        }
+    }
+    .pic6{
+        img{
+            @extend %public2;
+            height:17px; 
+        }
+    }
+    .myYG{
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    border: 1px solid #b4c1a3;
+    background: red;
+    width: 100px;
+    height: 200px;
+    }
+    .phoneYG{
+        display: none;
+        position: absolute;
+        top: 30px;
+        left: 0;
+        border: 1px solid #b4c1a3;
+        background: red;
+        width: 100px;
+        height: 200px;
+    }
+}

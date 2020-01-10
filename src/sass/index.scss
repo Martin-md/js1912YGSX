@@ -1,9 +1,10 @@
+/*！               以下是公共样式              */ 
 @import "compass/reset";
 $page_width:1200px;
 $page_container:100%;
-$page_size:12px;
+$page_size:14px;
 $div_margin:10px;
-$colors:(a:#008842, b:#e0e0e0,c:red,d:blue,e:orange);
+$colors:(a:#008842, b:#e0e0e0,c:red,d:blue,e:orange,f:pink);
 %public{
     width: $page_width;
     margin: 0 auto
@@ -13,30 +14,12 @@ $colors:(a:#008842, b:#e0e0e0,c:red,d:blue,e:orange);
     font-family: Arial,Verdana,"\5b8b\4f53";
     float: left;
     line-height: 30px;
-    margin-right: 10px;
 }
-
-
-#top{
-    @extend %public;
-    height: 30px;
-  
-}
-
-#header{
-    width:100%;
-    height:100px;
-    background:map-get($colors, b);
-}
-#ad{
-    width: 100%;
-    height:300px;
-    background:map-get($colors, a);
-}
-#content{
-    @extend %public;
-    background:map-get($colors, e);
-   
+%public2{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
 }
 #footer{
     width:100%;
@@ -47,29 +30,43 @@ $colors:(a:#008842, b:#e0e0e0,c:red,d:blue,e:orange);
     @extend %public;
     height:300px;
     background:map-get($colors, c);
-}
-#top .topul{
-     float: left;
-     li{
-        @extend %public1;
-     }
-     .shanghai{
-        margin-right: 5px;
-        color:map-get($colors, a);
-        float: left;
-     }
-     .sanjiao1{
-        background: url(../images/top.png) no-repeat 0 0; 
-        display: inline-block;
-        width: 8px;
-        height: 4px;
+};
+
+
+/*！                       文档各部分内容引入                    */
+@import "_top";//顶部
+
+@import "_header";//头部
+
+@import "_ad";//轮播图
+
+@import "_content";//内容
+
+#content{
+    @extend %public;
+    background:map-get($colors, e);
+    div{
+        width: 1200px;
+        margin: 0 auto;
+        background: #008842;
+         height: 500px;
+        margin-top: 18px;
+    }
+    .div1{
+        margin-top: 50px;
+        div{
+            width: 100%;
+            height: ;
+        }
     }
 }
 
-#top .topul2{
-    float: right;
-    li{
-        @extend %public1; 
-    }
-}
+
+
+
+
+
+
+
+
 
