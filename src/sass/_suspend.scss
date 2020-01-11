@@ -1,0 +1,137 @@
+#suspend{
+  
+    .sus1{
+          display: none;
+        height: 46px;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background:rgba(224,224,224,0.7);
+       
+        .zhong{
+            @extend %public
+          }
+    }
+}
+#suspend .sus1 .left{
+    float: left;
+    margin-top: 6px;;
+    a{
+      img{
+          width: 88px;
+          height: 40px;
+      }
+    }
+}
+#suspend .sus1 .middle{
+    width: 528px;
+    height: 58px;
+    float: left;
+    margin-top:9px;
+    margin-left: 201px;
+
+      .search{
+          width: 100%;
+          height: 28px;
+          .search2{
+            float: left;
+            width: 425px;
+            height: 26px;
+            line-height: 26px;
+            padding: 0 10px;
+            border: 1px solid #008842;
+            background: #e0e0e0;
+            font-size:12px;
+            font-family: Arial,Verdana,"\5b8b\4f53";
+            color: #000;
+        }
+         .search3{
+            float: left;
+            display: block;
+            width: 81px;
+            height: 28px;
+            line-height: 28px;
+            padding: 0;
+            border: none;
+            cursor: pointer;
+            color: #fff;
+            font-size: 14px;
+            background: #008842;
+            font-size:14px;
+            font-family:Arial,Verdana,"\5b8b\4f53";
+        }  
+      } 
+    }
+    #suspend .sus1 .text {
+        display: inline-block;
+        margin-top: 15px;
+        padding:0 8px;
+        font-size: 12px;
+         a{
+            text-decoration: none;
+            color: #008842; 
+            font-family: Arial,Verdana,"\5b8b\4f53";
+         }
+    }
+    #suspend .sus1  .right{
+        a {
+            text-decoration: none;
+        }
+        float: right;
+        height: 30px;
+        margin-top:7px;
+        width: 150px;
+        font-size: 25px;
+        border: 1px solid #008842;
+        background: #fff;
+        cursor: pointer;
+        .car{
+            display: inline-block;
+            vertical-align: middle;
+            width: 28px;
+            height: 20px;
+            margin-right: 10px;
+            font-size: 12px;
+            padding: 0;
+            background: url(../images/top.png) no-repeat -112px 0;
+            margin-left: 30px;
+            margin-top:6px;
+        }
+        .num{
+            display: inline-block;
+            vertical-align: middle;
+            width: 28px;
+            line-height: 28px;
+            font-size: 25px;
+            text-align: center;
+            color:#008842 ;
+        }
+    }
+    #suspend .sus2{
+        display: block;  
+        width: 56px;
+        position: fixed;
+        bottom: 20px;
+        margin-left: 1376px;
+        z-index: 100;
+     
+        height: 100px;
+        .service {
+          background-position: 0 -46px;
+          overflow: hidden;
+          display: block;
+          width: 50px;
+          height: 42px;
+          margin-bottom: 10px;
+          background: url(../images/右边悬浮.png) 0 42px;
+        }
+        .top{
+            overflow: hidden;
+            display: block;
+            width: 50px;
+            height: 42px;
+            margin-bottom: 10px;
+            background: url(../images/右边悬浮.png) 0 -2px;
+        }
+        
+    }

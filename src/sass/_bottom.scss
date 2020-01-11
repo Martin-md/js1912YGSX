@@ -1,0 +1,111 @@
+
+#bottom{
+    @extend %public;
+    height:363px;
+   
+    margin: 50px auto 0;
+    ul{
+        width: 100%;
+        height:148px;
+        li{
+            width: 190px;
+            height: 100%;
+            margin-left: 50px;
+          
+            float: left;
+            list-style: none;
+            p{
+                height: 23px;
+                width: 100%;
+                font-size: 14px;
+                text-indent: 40px;
+                line-height: 23px;
+            }
+            div{
+               border-left: 1px dashed #A8A8A8;
+               height: 110px;
+               margin-top: 15px;
+               margin-left: 10px;
+               a{
+                   display: block;
+                  padding:5px 20px;
+                  font-size: 12px;
+               }
+           }
+        }
+    }
+    span{
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        text-align: center;
+    }
+    div{
+        width: 100%;
+        a{
+            text-decoration: none;
+        }
+    }
+};
+    #bottom ul{
+    .li1{
+        p {
+            background: url(../images/bottomli.png) no-repeat 0 0;
+        }
+    }
+    .li2{
+        p {
+            background: url(../images/bottomli.png) no-repeat 0 -23px;
+        }
+    }
+    .li3{
+        p {
+            background: url(../images/bottomli.png) no-repeat 0 -45px;
+        }
+    }
+    .li4{
+        p {
+            background: url(../images/bottomli.png) no-repeat 0 -69px;
+        }
+    }
+    .li5{
+        p {
+            background: url(../images/bottomli.png) no-repeat 0 -93px;
+        }
+    }
+}
+#bottom .span1{
+    color: #008842;
+    font-size: 14px;
+    margin-top: 60px;
+    letter-spacing: 0.5px;
+    font-family: Arial,Verdana,"\5b8b\4f53"
+}
+#bottom .span2{
+    font-size: 12px;
+    font-family: Arial,Verdana,"\5b8b\4f53";
+    color: #717171;
+    margin-top: 20px;
+    letter-spacing: 0.5px;
+}
+#bottom .span3{
+    color: #717171;
+    font-size: 12px;
+    margin-top: 10px;
+}
+#bottom .last{
+    text-align: center;
+    a{
+        padding:0 5px;
+    }
+    .gongan{
+        font-size: 12px;
+        color: #939393;
+        font-family: Arial,Verdana,"\5b8b\4f53";
+    }
+}
+#bottom .span4{
+    color: #717171;
+    font-size: 12px;
+    padding: 10px 0 20px  0;
+}

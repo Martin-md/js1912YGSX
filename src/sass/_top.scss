@@ -31,9 +31,13 @@
         width: 8px;
         height: 4px;
     }
+
 };
 
 #top .topul2{
+    a {
+        text-decoration: none;
+    }
     float: right;
     li{
         @extend %public1; 
@@ -88,20 +92,72 @@
     display: none;
     position: absolute;
     top: 30px;
-    left: 0;
+    left: -1px;
     border: 1px solid #b4c1a3;
-    background: red;
-    width: 100px;
+    background: white;
+    width: 126px;
     height: 200px;
+      a{
+          display: block;
+          padding: 0 8px;
+      }
+      .yuanyuan{
+        margin-left: 10px;
+        padding: 0 5px;
+        color: #fff;
+        background: #008842;
+        border-radius: 50%;
+        width:15px;
+        height: 15px;
+        display: inline-block;
+        position: relative;
+        top:1px;
+        text-align: center;
+        line-height:15px;
+   
+    }
+      
     }
     .phoneYG{
         display: none;
         position: absolute;
         top: 30px;
-        left: 0;
+        left: -1px;
         border: 1px solid #b4c1a3;
-        background: red;
-        width: 100px;
-        height: 200px;
+        width: 136px;
+        height: 290px;
+        background: white;
+         img{
+             display: block;
+             width:120px;
+             height: 120px;
+             margin-left:6.5px;
+         }
+         span{
+            display: block;
+            margin-left:28px;
+         }
     }
+}
+#top .topul2 .effect1,.effect2{
+    border-left: 1px solid white;
+    border-right: 1px solid  white;
+}
+/*！                       css效果                  */
+#top .topul2 .effect1:hover{
+        border-left: 1px solid #ccc;
+        border-right: 1px solid #ccc;
+    
+     .myYG{
+         display: block;
+     }
+}
+#top .topul2 .effect2:hover{
+    
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+
+ .phoneYG{
+     display: block;
+ }
 }

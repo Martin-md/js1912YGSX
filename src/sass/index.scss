@@ -21,16 +21,7 @@ $colors:(a:#008842, b:#e0e0e0,c:red,d:blue,e:orange,f:pink);
     height: 18px;
     vertical-align: middle;
 }
-#footer{
-    width:100%;
-    height:100px;
-    background:map-get($colors, b);
-}   
-#bottom{
-    @extend %public;
-    height:300px;
-    background:map-get($colors, c);
-};
+
 
 
 /*！                       文档各部分内容引入                    */
@@ -42,24 +33,35 @@ $colors:(a:#008842, b:#e0e0e0,c:red,d:blue,e:orange,f:pink);
 
 @import "_content";//内容
 
-#content{
-    @extend %public;
-    background:map-get($colors, e);
-    div{
-        width: 1200px;
-        margin: 0 auto;
-        background: #008842;
-         height: 500px;
-        margin-top: 18px;
-    }
-    .div1{
-        margin-top: 50px;
-        div{
-            width: 100%;
-            height: ;
-        }
-    }
-}
+@import "_footer";//尾部
+
+@import "_bottom";//底部
+
+@import "_suspend";//悬浮部分
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+ 
+
+
+
+
+
 
 
 
