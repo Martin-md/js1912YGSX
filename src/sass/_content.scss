@@ -1,12 +1,12 @@
 
 #content{
     @extend %public;
-    background:map-get($colors, e);
+    // background:map-get($colors, e);
     .div1,.div2,.div3,.div4,.div5,
     .div6,.div7,.div8{
         width: 1200px;
         margin: 0 auto;
-        background: pink;
+        // background: pink;
         height: 500px;
         margin-top: 18px;
         .divup{
@@ -17,6 +17,10 @@
             border: 1px solid #d5d5d5;
             width: 100%;
             height: 462px;
+            li{
+              border-right: 1px solid #d5d5d5;
+              border-bottom: 1px solid #d5d5d5;
+            }
         }
     }
     .div1{
@@ -75,7 +79,7 @@
               .li1{
                   width: 275px;
                   height: 100%;
-                  background: lightsalmon;
+                  // background: lightsalmon;
               }
               .li2{
                   width:230px;
