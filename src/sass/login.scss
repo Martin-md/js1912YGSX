@@ -1,0 +1,48 @@
+
+/*！               以下是公共样式              */ 
+@import "compass/reset";
+$page_width:1200px;
+$page_container:100%;
+$page_size:14px;
+$div_margin:10px;
+$colors:(a:#008842, b:#e0e0e0,c:red,d:blue,e:orange,f:pink);
+%public{
+    width: $page_width;
+    margin: 0 auto
+};
+%public1{
+    font-size: 12px;
+    font-family: Arial,Verdana,"\5b8b\4f53";
+    float: left;
+    line-height: 30px;
+}
+%public2{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+}
+// @import "compass/reset";
+@import "_top";//顶部
+
+@import "_header";//头部
+
+@import "_footer";//尾部
+
+@import "_bottom";//底部
+
+#login fieldset{
+   
+    margin-top: 20px;
+    p{
+        padding: 10px 10px;
+    }
+ 
+}
+#login {
+    width: 260px;
+
+    border: 1px solid #cccc;
+    margin: 0 auto;
+    margin-top: 20px;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheets/details.css">
+</head>
+<body>
+    <!-- 引用jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- 顶部-->
+    <div id="top">
+
+    </div>
+     <!-- 头部-->
+     <div id="header">
+
+    </div>
+    <!-- 内容 -->
+    <div id="decontent">
+       <ul>
+           <li></li>
+           <li>新品专区</li>
+           <li>优质生活</li>
+           <li>银行专区</li>
+           <li>菜谱专栏</li>
+       </ul>
+           <div class="box1"><img src="" alt=""></div>
+           <div class="box2">
+                <div class="p-name"></div>
+                    <a class="loadtitle" href="##"></a>
+                </div>
+                <div class="p-price"><strong><em>￥</em><i class="loadpcp"></i></strong></div>
+                <div class="p-btn">
+                    <input type="text" id="count" value="1" />
+                    <a href="cartlist.html">加入购物车</a>
+                </div>
+            </div>
+                <div id="ulist">
+                    <a href="javascript:;" id="left">&lt;</a>
+                    <div id="list">
+                        <ul>
+                              
+                        </ul>
+                    </div>
+                    <a href="javascript:;" id="right">&gt;</a>
+                </div>
+            
+    </div>
+    <!-- 尾部 -->
+    <div id="footer">
+
+    </div>
+    <!-- 底部 -->
+    <div id="bottom">
+
+    </div>
+    <script>
+        (function ($) {
+            $("#top").load('top.html'),
+            $("#header").load('header.html')
+            $("#footer").load('footer.html')
+            $("#bottom").load('bottom.html')
+        })(jQuery);
+    </script>
+     
+</body>
+</html>

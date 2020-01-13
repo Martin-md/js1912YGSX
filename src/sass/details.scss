@@ -1,0 +1,158 @@
+
+/*！               以下是公共样式              */ 
+@import "compass/reset";
+$page_width:1200px;
+$page_container:100%;
+$page_size:14px;
+$div_margin:10px;
+$colors:(a:#008842, b:#e0e0e0,c:red,d:blue,e:orange,f:pink);
+%public{
+    width: $page_width;
+    margin: 0 auto
+};
+%public1{
+    font-size: 12px;
+    font-family: Arial,Verdana,"\5b8b\4f53";
+    float: left;
+    line-height: 30px;
+}
+%public2{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+}
+// @import "compass/reset";
+@import "_top";//顶部
+
+@import "_header";//头部
+
+@import "_footer";//尾部
+
+@import "_bottom";//底部
+
+#decontent{
+    width: 1200px;
+    height: 500px;
+  
+    margin: 0 auto;
+    ul{
+        height: 40px;
+        li{
+            width: 80px;
+            padding: 0 35px;
+            height: 100%;
+            list-style: none ;
+            float: left;
+        }
+    }
+}
+#decontent .box1{
+     height: 400px;
+     width: 400px;
+     background: plum;
+     float: left;
+}
+
+.goodsinfo-word {
+    overflow: hidden;
+    float: left;
+}
+
+.p-name {
+    width: 350px;
+    height: 50px;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.p-name .loadtitle {
+    font-family: "微软雅黑";
+    color: #666666;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.p-price {
+    margin-left: 400px;
+    margin-top: 165px;
+    width: 300px;
+    height: 50px;
+    background: rgba(183, 183, 183, 0.4);
+    line-height: 50px;
+}
+
+.p-btn {
+    margin-top: 20px;
+}
+
+.p-btn input {
+    display: inline-block;
+    width: 50px;
+    height: 46px;
+    font-size: 20px;
+    font-family: "微软雅黑";
+    color: black;
+    margin-left: 50px;
+    border: 1px solid gray;
+    /* float: left; */
+}
+
+.p-btn a {
+    display: block;
+    width: 100px;
+    height: 50px;
+    background-color: red;
+    font-size: 16px;
+    font-family: "微软雅黑";
+    color: white;
+    line-height: 50px;
+    text-align: center;
+    float: left;
+    margin-left: 10px;
+}
+  
+		#ulist {
+			position: absolute;
+			left: 159px;
+			top: 548px;
+			width: 402px;
+			height: 56px;
+			overflow: hidden;
+		}
+
+		#ulist a {
+			float: left;
+			width: 10px;
+			height: 54px;
+			border: 1px solid #ccc;
+			text-decoration: none;
+			line-height: 56px;
+			text-align: center;
+			background: #fff;
+		}
+
+		#list {
+			float: left;
+			margin-left: 18px;
+			width: 372px;
+			position: relative;
+        }
+        #right {
+			position: absolute;
+			right: 0px;
+			top: 0px;
+			color: #333;
+		}
+
+		#left {
+			position: absolute;
+			left: 0px;
+			top: 0px;
+			z-index: 2;
+            color: #fff;
+        }
+        a{
+            text-decoration: none;
+        }
+

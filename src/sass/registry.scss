@@ -1,0 +1,117 @@
+
+
+/*！               以下是公共样式              */ 
+@import "compass/reset";
+$page_width:1200px;
+$page_container:100%;
+$page_size:14px;
+$div_margin:10px;
+$colors:(a:#008842, b:#e0e0e0,c:red,d:blue,e:orange,f:pink);
+%public{
+    width: $page_width;
+    margin: 0 auto
+};
+%public1{
+    font-size: 12px;
+    font-family: Arial,Verdana,"\5b8b\4f53";
+    float: left;
+    line-height: 30px;
+}
+%public2{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+}
+// @import "compass/reset";
+@import "_top";//顶部
+
+@import "_header";//头部
+
+@import "_footer";//尾部
+
+@import "_bottom";//底部
+#suiji {
+    width: 100px;
+    height: 30px;
+    margin-left: 30px;
+    height: 30px;
+    background: #ccc;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14px;
+    line-height: 30px;
+    color: #666;
+}
+
+.one {
+    background: #008842;
+    width: 80px;
+}
+
+input {
+    width: 250px;
+}
+
+span {
+    display: none;
+    margin: 0 auto;
+    width: 200px;
+}
+
+.two {
+    display: inline-block;
+}
+
+.b1 {
+    width: 50px;
+    height: 30px;
+    background: red;
+    display: none;
+    text-align: center;
+}
+
+.b2 {
+    width: 50px;
+    height: 30px;
+    background: orange;
+    display: none;
+    text-align: center;
+}
+
+.b3 {
+    width: 50px;
+    height: 30px;
+    background: green;
+    display: none;
+    text-align: center;
+}
+form{
+    height: 500px;
+    margin-top: 30px;
+    padding-right: 500px;;
+    P{
+        padding: 10px 20px;
+    }
+    main {
+        padding: 5px 20px;
+    }
+    
+}
+
+// fieldset{
+//     // border: 1px solid  #5555;
+// }
+#registry{
+    width: 1200px;
+    height: 500px;
+    border: 1px solid #ccc;
+    border-top: none;;
+    margin: 0 auto;
+}
+#registry div{
+    float:right;
+    position: relative;
+    top: -400px;
+    border-left: 1px solid #cccc;
+}

@@ -118,3 +118,36 @@
     #content  .first{
       margin-top: 50px;
     }
+    //左边楼梯
+    #loutinav {
+      width: 35px;
+      position: fixed;
+      top: 100px;
+      left: 50px;
+      border: 1px solid #ddd;
+      // display: none;
+  }
+
+  #loutinav ul li {
+      width: 35px;
+      height: 32px;
+      border-bottom: 1px dotted #DDDDDD;
+      list-style: none;
+      font-size: 12px;
+      text-align: center;
+      position: relative;
+      cursor: pointer;
+      padding: 10px 0;
+      background: #918888;
+      color: #fff;
+      span{
+        width: 40px;
+        height: 40px;
+        background: url(../images/louti.png) no-repeat 0 0;
+      }
+  }
+  #loutinav ul li:hover{
+     background: pink
+     
+  }
+
