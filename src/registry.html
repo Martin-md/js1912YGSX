@@ -20,28 +20,28 @@
     </div>
     <!-- 内容 -->
     <div id="registry">
-        <form action="提交成功.html" method="POST" id="form1">
+        <form action="http://10.31.152.53/martin/js1912YGSX/php/registry.php" method="POST" id="form1">
             <fieldset style="width:400px;margin:0 auto;">
-                <main class="one two">用户注册</main> <span>用户不合法，请重新输入</span>
-                <p><label for="">用户名称：</label><input type="text"></p>
-                <p><label for="">登陆密码：</label><input type="text"></p>
+                <main class="one two">用户注册</main> <span id="tishi">用户不合法，请重新输入</span>
+                <p class="put"><label for="">用户名称：</label><input type="text" name="username"></p>
+                <p class="put"><label for="">登陆密码：</label><input type="text" name="password"></p>
               
-                <p><label for="">密码安全级别：</label>
+                <label for="">密码安全级别：</label>
                     <div class="b1">低</div>
                     <div class="b2">中</div>
                     <div class="b3">高</div>
-                </p>
+          
                 <main class="one">信息资料</main>
-                <p><label for="">电子邮件：</label><input type="text"></p>
-                <p><label for="">真实姓名：</label><input type="text"></p>
-                <p><label for="">通知号码：</label><input type="text"></p>
-              <p> &nbsp; &nbsp;<label for="">验证码：</label><input type="text"></p>
+                <p class="put"><label for="">电子邮件：</label><input type="text"  name="email"></p>
+                <p class="put"><label for="">真实姓名：</label><input type="text"></p>
+                <p class="put"><label for="">通知号码：</label><input type="text"></p>
+                <p class="put"> &nbsp; &nbsp;<label for="">验证码：</label><input type="text"></p>
                 <article id="suiji"></article>
-                <p class="last"><input type="submit" value="注册提交"></p>
+                <p  class="last put"><input type="submit" value="注册提交" name="submit"></p>
                
             </fieldset>
         </form>
-        <div><img src="images/register.png" alt=""></div>
+        <div class="tupian"><img src="images/register.png" alt=""></div>
     </div>
     <!-- 尾部 -->
     <div id="footer">
@@ -54,12 +54,12 @@
     <script>
         (function ($) {
             $("#top").load('top.html'),
-            $("#header").load('header.html')
+            $("#header").load('header1.html')
             $("#footer").load('footer.html')
             $("#bottom").load('bottom.html')
         })(jQuery);
     </script>
      
-    
+    <script src="./script/registry.js"></script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-
+// @import "compass/reset";
 #top{
     @extend %public;
     height: 30px;
@@ -97,6 +97,7 @@
     background: white;
     width: 126px;
     height: 200px;
+    z-index:10000;
       a{
           display: block;
           padding: 0 8px;
@@ -127,6 +128,7 @@
         width: 136px;
         height: 290px;
         background: white;
+        z-index:10000;
          img{
              display: block;
              width:120px;

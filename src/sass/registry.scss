@@ -1,7 +1,7 @@
 
 
 /*！               以下是公共样式              */ 
-@import "compass/reset";
+
 $page_width:1200px;
 $page_container:100%;
 $page_size:14px;
@@ -23,7 +23,7 @@ $colors:(a:#008842, b:#e0e0e0,c:red,d:blue,e:orange,f:pink);
     height: 18px;
     vertical-align: middle;
 }
-// @import "compass/reset";
+@import "compass/reset";
 @import "_top";//顶部
 
 @import "_header";//头部
@@ -53,14 +53,9 @@ input {
     width: 250px;
 }
 
-span {
-    display: none;
-    margin: 0 auto;
-    width: 200px;
-}
-
 .two {
     display: inline-block;
+    
 }
 
 .b1 {
@@ -87,16 +82,22 @@ span {
     text-align: center;
 }
 form{
+    position: relative;
+        P{
+             padding: 10px 20px;
+         }
     height: 500px;
     margin-top: 30px;
     padding-right: 500px;;
-    P{
-        padding: 10px 20px;
-    }
+   
     main {
         padding: 5px 20px;
     }
-    
+    span {
+        display: none;
+        margin: 0 auto;
+        width: 200px;
+    } 
 }
 
 // fieldset{
@@ -109,9 +110,15 @@ form{
     border-top: none;;
     margin: 0 auto;
 }
-#registry div{
+#registry .tupian{
     float:right;
-    position: relative;
-    top: -400px;
+    position: absolute;
+    top: 230px;
+    left: 1000px;
     border-left: 1px solid #cccc;
+}
+#tishi{
+    display: none;
+    font-size: 18px!important;
+    color: red!important;
 }

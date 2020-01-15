@@ -38,6 +38,7 @@ $colors:(a:#008842, b:#e0e0e0,c:red,d:blue,e:orange,f:pink);
     margin: 0 auto;
     ul{
         height: 40px;
+       
         li{
             width: 80px;
             padding: 0 35px;
@@ -62,15 +63,17 @@ $colors:(a:#008842, b:#e0e0e0,c:red,d:blue,e:orange,f:pink);
 .p-name {
     width: 350px;
     height: 50px;
-    margin-left: 50px;
+    margin-left: 402px;
     margin-top: 20px;
 }
 
 .p-name .loadtitle {
-    font-family: "微软雅黑";
-    color: #666666;
-    font-weight: bold;
-    font-size: 18px;
+        font-family: "微软雅黑";
+        color: #666666;
+        font-weight: bold;
+        font-size: 18px;
+    
+       
 }
 
 .p-price {
@@ -96,6 +99,7 @@ $colors:(a:#008842, b:#e0e0e0,c:red,d:blue,e:orange,f:pink);
     margin-left: 50px;
     border: 1px solid gray;
     /* float: left; */
+    text-align: center;
 }
 
 .p-btn a {
@@ -117,32 +121,52 @@ $colors:(a:#008842, b:#e0e0e0,c:red,d:blue,e:orange,f:pink);
 			left: 159px;
 			top: 548px;
 			width: 402px;
-			height: 56px;
-			overflow: hidden;
+			height: 80px;
+            overflow: hidden;
+            margin-top: 20px;
+            li{
+                height: 80px;
+                width: 80px;
+                float: left;
+                padding: 6px;
+              
+                img{
+                    width: 100%;
+                    height: 100%;
+                    border: 1px solid #ccc;
+                }
+              }
 		}
 
 		#ulist a {
 			float: left;
 			width: 10px;
-			height: 54px;
+			height: 80px;
 			border: 1px solid #ccc;
 			text-decoration: none;
-			line-height: 56px;
+			line-height: 77px;
 			text-align: center;
-			background: #fff;
+            background: #fff;
+         
 		}
 
 		#list {
 			float: left;
 			margin-left: 18px;
 			width: 372px;
-			position: relative;
+            position: relative;
+            height: 84px;
+            ul{
+                position:absolute;
+            }
+            
         }
         #right {
 			position: absolute;
 			right: 0px;
 			top: 0px;
-			color: #333;
+            color: #333;
+            height: 80px;
 		}
 
 		#left {
@@ -151,8 +175,51 @@ $colors:(a:#008842, b:#e0e0e0,c:red,d:blue,e:orange,f:pink);
 			top: 0px;
 			z-index: 2;
             color: #fff;
+          
         }
         a{
             text-decoration: none;
         }
-
+        .box1{
+            height: 500px;
+            width: 500px;
+            position: relative;
+            img{
+                display: inline-block;
+                width: 100%;
+                height: 100%;
+            }
+        }
+        #sf {
+            width: 50px;
+            height: 50px;
+            background: orange;
+            opacity: 0.3;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            visibility: hidden;
+            cursor: move;
+        }
+        #bf {
+            width: 500px;
+            height: 500px;
+            border: 1px solid #000;
+            float: left;
+            overflow: hidden;
+            position: absolute;
+            left: 561px;
+            visibility: hidden;
+             img {
+                position: absolute;
+                left: 0px;
+                top: 0px;
+            }
+        }
+        #bf {
+            img {
+                width: 700px;
+                height: 700px;
+            }
+        }
+      

@@ -1,9 +1,9 @@
 $('#loutinav li').on('click', function () {
     //$(this).index():当前操作的元素的索引
     $(this).addClass('active').siblings('li').removeClass('active');
-    let $top = $('.louceng').eq($(this).index()).offset().top; //和楼梯对应的楼层的top值。
+    let $ltop = $('.louceng').eq($(this).index()).offset().top; //和楼梯对应的楼层的top值。
     $('html').animate({
-        scrollTop: $top
+        scrollTop: $ltop
     });
 });
 // //2.回调顶部
@@ -13,11 +13,23 @@ $('#loutinav li').on('click', function () {
 //     });
 // });
 
+let $top = $(window).scrollTop();
+if ($top >= 600) {
+    $('#loutinav').show();
+    //$('#loutinav').css('display', 'block');
+    console.log(1);
+    
+} else {
+    $('#loutinav').hide();
+    //$('#loutinav').css('display', 'none');
+    console.log(2);
+    
+}
 
 //3.触发滚轮，对应的楼梯背景样式发生改变。
 $(window).on('scroll', function () {
     //显示隐藏楼梯
-    let $top = $(window).scrollTop();
+    $top = $(window).scrollTop();
     if ($top >= 600) {
         $('#loutinav').show();
         //$('#loutinav').css('display', 'block');

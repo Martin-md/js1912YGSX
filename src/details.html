@@ -9,6 +9,7 @@
 </head>
 <body>
     <!-- 引用jquery -->
+   
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- 顶部-->
     <div id="top">
@@ -27,7 +28,14 @@
            <li>银行专区</li>
            <li>菜谱专栏</li>
        </ul>
-           <div class="box1"><img src="" alt=""></div>
+           <div class="box1" id="spic">
+               <img src="" alt="">
+               <div id="sf"></div>
+           </div>
+           <div id="bf">
+            <!-- 大图 -->
+            <img src="" alt="" id="bpic">
+        </div>
            <div class="box2">
                 <div class="p-name"></div>
                     <a class="loadtitle" href="##"></a>
@@ -35,7 +43,7 @@
                 <div class="p-price"><strong><em>￥</em><i class="loadpcp"></i></strong></div>
                 <div class="p-btn">
                     <input type="text" id="count" value="1" />
-                    <a href="cartlist.html">加入购物车</a>
+                    <a href="http://10.31.152.53/martin/js1912YGSX/src/cartlist.html">加入购物车</a>
                 </div>
             </div>
                 <div id="ulist">
@@ -47,7 +55,7 @@
                     </div>
                     <a href="javascript:;" id="right">&gt;</a>
                 </div>
-            
+              
     </div>
     <!-- 尾部 -->
     <div id="footer">
@@ -60,11 +68,11 @@
     <script>
         (function ($) {
             $("#top").load('top.html'),
-            $("#header").load('header.html')
+            $("#header").load('header1.html')
             $("#footer").load('footer.html')
             $("#bottom").load('bottom.html')
         })(jQuery);
     </script>
-     
+      <script src="script/details.js"></script>
 </body>
 </html>
